@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .social-link {
+  @include social-link(rgba(255, 255, 255, 0.1));
+}
+.social-link {
+  @include social-link(#ffffff);
+}
+
+.social-icon {
+  @include social-icon(#afb1b8);
+}
+
+.footer .social-icon {
+  @include social-icon($white-text-color);
+}

@@ -1,0 +1,88 @@
+/*FOOTER*/
+.footer {
+  background-color: #2f303a;
+  .container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  b {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $white-text-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
+
+.address p {
+  margin-bottom: 9px;
+  color: $white-text-color;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.address a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  font-style: normal;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-sign-us {
+  margin-left: auto;
+}
+
+.footer-form-field {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  input {
+    margin: 0 12px 0 0;
+    padding: 15px;
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-icon-send {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .footer .button:hover &,
+  .footer .button:focus & {
+    transform: translateY(-40px);
+  }
+}
+
+.footer-icon-twitter {
+  position: absolute;
+  right: 32px;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $accent-text-color;
+
+  transform: translateY(40px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .footer .button:hover &,
+  .footer .button:focus & {
+    transform: translateY(0);
+  }
+}
