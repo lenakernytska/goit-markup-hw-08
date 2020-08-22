@@ -45,6 +45,9 @@ body {
   :focus {
     outline-color: $accent-text-color;
   }
+  .modal-open {
+    overflow: hidden;
+  }
 }
 
 .is-hidden {

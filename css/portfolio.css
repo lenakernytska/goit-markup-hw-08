@@ -411,6 +411,10 @@ body :focus {
   outline-color: #2196f3;
 }
 
+body .modal-open {
+  overflow: hidden;
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -782,7 +786,6 @@ body :focus {
     padding-top: 32px;
   }
   .contacts-item .link {
-    font-size: 14px;
     line-height: 1.14;
   }
   .contacts-item:not(:last-child) {
