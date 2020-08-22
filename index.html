@@ -18,10 +18,18 @@
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container">
-        <nav class="navigation">
+        
           <a class="logo" href="./index.html" lang="en"
             >Web <span class="up">Studio</span></a
           >
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu-burger" href="./images/main-page/sprite.svg#icon-burger"></use>
+              <use class="icon-menu-cross" href="./images/main-page/sprite.svg#icon-close-cross"></use>
+            </svg>
+          </button>
+          <div class="menu-wrapper" id="menu-wrapper" data-menu>
+          <nav class="navigation">
           <ul class="site-nav list">
             <li class="site-nav-item">
               <a class="link current" href="./index.html">Студия</a>
@@ -52,6 +60,7 @@
             >
           </li>
         </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -67,7 +76,7 @@
         </div>
       </section>
       <!-- Преимущества -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 hidden class="section-title">Наши преимущества</h2>
           <ul class="advantages list">
@@ -123,9 +132,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Чем мы занимаемся -->
-      <section class="section section-service">
+      <!-- <section class="section section-service">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="service list">
@@ -164,9 +173,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наша команда -->
-      <section class="section section-team">
+      <!-- <section class="section section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
@@ -364,9 +373,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Постоянные клиенты -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="client list">
@@ -515,9 +524,9 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Модальное окно -->
-    <div data-modal class="backdrop is-hidden">
+    <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal-form">
         <button data-modal-close class="modal-close-btn">
           <svg class="close-icon" width="18" height="18">
@@ -591,6 +600,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> --> 
+    <script src="./js/menu.js"></script>
   </body>
 </html>

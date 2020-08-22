@@ -39,9 +39,12 @@ body {
   letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 14px;
-}
-:focus {
-  outline-color: $accent-text-color;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+  :focus {
+    outline-color: $accent-text-color;
+  }
 }
 
 .is-hidden {
