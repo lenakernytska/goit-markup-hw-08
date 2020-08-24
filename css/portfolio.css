@@ -447,8 +447,8 @@ body .modal-open {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
@@ -458,6 +458,20 @@ body .modal-open {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -544,7 +558,6 @@ body .modal-open {
 .social {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
 }
 
 .social-item:not(:last-child) {

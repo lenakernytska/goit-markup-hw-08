@@ -75,8 +75,8 @@
           </button>
         </div>
       </section>
-      <!-- Преимущества -->
-      <!-- <section class="section">
+      <!-- Преимущества  -->
+      <section class="section">
         <div class="container">
           <h2 hidden class="section-title">Наши преимущества</h2>
           <ul class="advantages list">
@@ -132,16 +132,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Чем мы занимаемся -->
-      <!-- <section class="section section-service">
+      <section class="section section-service">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="service list">
             <li class="service-list">
               <div class="service-card-wrapper">
-                <img
-                  src="./images/main-page/laptop.jpg"
+                <img srcset="./images/main-page/service/service-img1.jpg 1x, ./images/main-page/service/service-img1@2x.jpg 2x, ./images/main-page/service/service-img1@3x.jpg 3x"
+                  src="./images/main-page/service/service-img1.jpg"
                   alt="ноутбук"
                   width="370"
                   height="295"
@@ -151,8 +151,8 @@
             </li>
             <li class="service-list">
               <div class="service-card-wrapper">
-                <img
-                  src="./images/main-page/mobile.jpg"
+                <img srcset="./images/main-page/service/service-img2.jpg 1x, ./images/main-page/service/service-img2@2x.jpg 2x, ./images/main-page/service/service-img2@3x.jpg 3x"
+                  src="./images/main-page/service/service-img2.jpg"
                   alt="мобильный телефон"
                   width="370"
                   height="295"
@@ -162,8 +162,8 @@
             </li>
             <li class="service-list">
               <div class="service-card-wrapper">
-                <img
-                  src="./images/main-page/computer.jpg"
+                <img srcset="./images/main-page/service/service-img3.jpg 1x, ./images/main-page/service/service-img3@2x.jpg 2x, ./images/main-page/service/service-img3@3x.jpg 3x"
+                  src="./images/main-page/service/service-img3.jpg"
                   alt="экран монитора"
                   width="370"
                   height="295"
@@ -173,19 +173,25 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Наша команда -->
-      <!-- <section class="section section-team">
+      <section class="section section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
             <li class="team-list">
-              <img
-                src="./images/main-page/team-1.jpg"
-                alt="фото Николая Кучеренко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/main-page/Team-1/mob-team1-img.jpg 1x, ./images/main-page/Team-1/mob-team1-img@2x.jpg 2x, ./images/main-page/Team-1/mob-team1-img@3x.jpg 3x"
+                src="./images/main-page/Team-1/mob-team1-img.jpg" type="image/jpg" media="(max-width: 767px)"/>
+                <source srcset="./images/main-page/Team-2/tab-team1-img.jpg 1x, ./images/main-page/Team-2/tab-team1-img@2x.jpg 2x, ./images/main-page/Team-2/tab-team1-img@3x.jpg 3x"
+                src="./images/main-page/Team-2/tab-team1-img.jpg" type="image/jpg" media="(max-width: 1199px)"/>
+                <source
+                  srcset="./images/main-page/Team-3/desk-team1-img.jpg 1x, ./images/main-page/Team-3/desk-team1-img@2x.jpg 2x, ./images/main-page/Team-3/desk-team1-img@3x.jpg 3x"
+                  src="./images/main-page/Team-3/desk-team1-img.jpg" type="image/jpg" media="(min-width: 1200px)" />
+      
+              <img src="./images/magin-page/Team-1/mob-team1-img.jpg"
+                alt="фото Николая Кучеренко"/>
+              </picture>
               <h3 class="team-name">Николай Кучеренко</h3>
               <p class="team-position">Product Designer</p>
               <ul class="social list">
@@ -228,12 +234,20 @@
               </ul>
             </li>
             <li class="team-list">
-              <img
-                src="./images/main-page/team-2.jpg"
+              <picture>
+                <source
+                  srcset="./images/main-page/Team-1/mob-team2-img.jpg 1x, ./images/main-page/Team-1/mob-team2-img@2x.jpg 2x, ./images/main-page/Team-1/mob-team2-img@3x.jpg 3x"
+                  src="./images/main-page/Team-1/mob-team2-img.jpg" type="image/jpg" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/main-page/Team-2/tab-team2-img.jpg 1x, ./images/main-page/Team-2/tab-team2-img@2x.jpg 2x, ./images/main-page/Team-2/tab-team2-img@3x.jpg 3x"
+                  src="./images/main-page/Team-2/tab-team2-img.jpg" type="image/jpg" media="(max-width: 1199px)" />
+                <source
+                  srcset="./images/main-page/Team-3/desk-team2-img.jpg 1x, ./images/main-page/Team-3/desk-team2-img@2x.jpg 2x, ./images/main-page/Team-3/desk-team2-img@3x.jpg 3x"
+                  src="./images/main-page/Team-3/desk-team2-img.jpg" type="image/jpg" media="(min-width: 1200px)" />
+              <img src="./images/main-page/Team-1/mob-team2-img.jpg"
                 alt="фото Ольга Иванова"
-                width="270"
-                height="260"
               />
+              </picture>
               <h3 class="team-name">Ольга Иванова</h3>
               <p class="team-position">Frontend Developer</p>
               <ul class="social list">
@@ -276,11 +290,19 @@
               </ul>
             </li>
             <li class="team-list">
-              <img
-                src="./images/main-page/team-3.jpg"
-                alt="фото Андрей Шевченко"
-                width="270"
-                height="260"
+              <picture>
+                <source
+                  srcset="./images/main-page/Team-1/mob-team3-img.jpg 1x, ./images/main-page/Team-1/mob-team3-img@2x.jpg 2x, ./images/main-page/Team-1/mob-team3-img@3x.jpg 3x"
+                  src="./images/main-page/Team-1/mob-team3-img.jpg" type="image/jpg" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/main-page/Team-2/tab-team3-img.jpg 1x, ./images/main-page/Team-2/tab-team3-img@2x.jpg 2x, ./images/main-page/Team-2/tab-team3-img@3x.jpg 3x"
+                  src="./images/main-page/Team-2/tab-team3-img.jpg" type="image/jpg" media="(max-width: 1199px)" />
+                <source
+                  srcset="./images/main-page/Team-3/desk-team3-img.jpg 1x, ./images/main-page/Team-3/desk-team3-img@2x.jpg 2x, ./images/main-page/Team-3/desk-team3-img@3x.jpg 3x"
+                  src="./images/main-page/Team-3/desk-team3-img.jpg" type="image/jpg" media="(min-width: 1200px)" />
+                <img src="./images/main-page/Team-1/mob-team3-img.jpg" alt="фото Андрей Шевченко" />
+              </picture>
+          
               />
               <h3 class="team-name">Андрей Шевченко</h3>
               <p class="team-position">Marketing</p>
@@ -324,12 +346,21 @@
               </ul>
             </li>
             <li class="team-list">
-              <img
-                src="./images/main-page/team-4.jpg"
-                alt="фото Иван Николаев"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/main-page/Team-1/mob-team4-img.jpg 1x, ./images/main-page/Team-1/mob-team4-img@2x.jpg 2x, ./images/main-page/Team-1/mob-team4-img@3x.jpg 3x"
+                  src="./images/main-page/Team-1/mob-team4-img.jpg" type="image/jpg" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/main-page/Team-2/tab-team4-img.jpg 1x, ./images/main-page/Team-2/tab-team4-img@2x.jpg 2x, ./images/main-page/Team-2/tab-team4-img@3x.jpg 3x"
+                  src="./images/main-page/Team-2/tab-team4-img.jpg" type="image/jpg" media="(max-width: 1199px)" />
+                <source
+                  srcset="./images/main-page/Team-3/desk-team4-img.jpg 1x, ./images/main-page/Team-3/desk-team4-img@2x.jpg 2x, ./images/main-page/Team-3/desk-team4-img@3x.jpg 3x"
+                  src="./images/main-page/Team-3/desk-team4-img.jpg" type="image/jpg" media="(min-width: 1200px)" />
+                <img src="./images/main-page/Team-1/mob-team4-img.jpg" alt="фото Иван Николаев" />
+              </picture>
+            
+               
+              
               <h3 class="team-name">Иван Николаев</h3>
               <p class="team-position">UI Designer</p>
               <ul class="social list">
@@ -373,9 +404,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Постоянные клиенты -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="client list">
@@ -453,7 +484,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-address">
           <a href="./index.html" lang="en" class="logo"
@@ -524,8 +555,8 @@
           </div>
         </div>
       </div>
-    </footer> -->
-    <!-- Модальное окно --> -->
+    </footer> --> 
+    <!-- Модальное окно --> 
     <div data-modal class="backdrop is-hidden">
       <div class="modal-form">
         <button data-modal-close class="modal-close-btn">

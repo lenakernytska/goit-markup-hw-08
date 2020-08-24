@@ -1,31 +1,4 @@
 /*CLIENT*/
-.client {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.client-list:not(:last-child) {
-  margin-right: 30px;
-}
-
-.client-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 170px;
-  height: 90px;
-
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    border-color: $accent-text-color;
-  }
-}
-
 .client-icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,4 +6,62 @@
   .client-list-link:focus & {
     fill: $accent-text-color;
   }
+
+  .client-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border-color: $accent-text-color;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .client {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
+// .client {
+//   display: flex;
+//   justify-content: center;
+//   align-content: center;
+// }
+
+// .client-list:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+// .client-list-link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   width: 170px;
+//   height: 90px;
+
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     border-color: $accent-text-color;
+//   }
+// }
+
+// .client-icon {
+//   fill: #afb1b8;
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   .client-list-link:hover &,
+//   .client-list-link:focus & {
+//     fill: $accent-text-color;
+//   }
+// }
