@@ -24,7 +24,13 @@ team-name {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .team-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
     display: flex;
     flex-wrap: wrap;
@@ -33,9 +39,6 @@ team-name {
     &-list {
       margin: 15px;
       flex-basis: calc((100% - 4 * 15px) / 2);
-    }
-    &-list:not(:last-child) {
-      margin-bottom: 30px;
     }
   }
 }

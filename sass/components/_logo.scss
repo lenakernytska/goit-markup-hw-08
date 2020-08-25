@@ -3,25 +3,44 @@
   text-decoration: none;
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
   .up {
     color: $primary-title-color;
-    @media screen and (max-width: 767px) {
-      font-size: 24px;
-      line-height: 1.16;
+    font-size: 24px;
+    line-height: 1.16;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.2;
+      margin-right: 85px;
     }
     // @media screen and (min-width: $tablet) {
     //   margin-right: 80px;
     // }
+  }
+  .down {
+    display: inline-block;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.16;
     @media screen and (min-width: 1200px) {
-      margin-right: 85px;
+      font-size: 26px;
+      line-height: 1.2;
     }
   }
 }
 
-.down {
-  color: #ffffff;
-  margin-right: 147px;
-  margin-bottom: 20px;
-}
+// .down {
+//   display: inline-block;
+//   color: #ffffff;
+//   margin-bottom: 20px;
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 147px;
+//   }
+// }
