@@ -41,7 +41,7 @@
       0px 3px 1px rgba(0, 0, 0, 0.1);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio-filter:not(:nth-last-child(-n + 2)) {
     margin-bottom: 15px;
   }
@@ -58,5 +58,22 @@
 @media screen and (min-width: 768px) {
   .portfolio-filter:not(:last-child) {
     margin-right: 8px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .portfolio-filter:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .portfolio-filter {
+    margin-right: 4px;
+  }
+  .portfolio-filter:nth-child(2) {
+    margin-right: 0;
+  }
+  .portfolio-filter:nth-child(4) {
+    margin-right: 0;
+  }
+  .portfolio-filter:nth-child(5) {
+    margin-right: 0;
   }
 }

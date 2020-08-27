@@ -568,6 +568,12 @@ body .modal-open {
   background-color: #188ce8;
 }
 
+@media screen and (max-width: 479px) {
+  .modal-form .button {
+    min-width: 100px;
+  }
+}
+
 .social {
   display: flex;
   justify-content: center;
@@ -659,6 +665,12 @@ body .modal-open {
   transform: translate(-50%, -50%) scale(1.3);
 }
 
+@media screen and (max-width: 479px) {
+  .modal-form {
+    padding: 30px 20px 20px 20px;
+  }
+}
+
 .close-icon {
   display: block;
   fill: #000000;
@@ -678,6 +690,7 @@ body .modal-open {
   text-align: center;
   margin-bottom: 30px;
   color: #212121;
+  text-transform: none;
 }
 
 .input-field {
@@ -688,6 +701,12 @@ body .modal-open {
   margin-bottom: 28px;
   letter-spacing: 0.01em;
   cursor: pointer;
+}
+
+@media screen and (max-width: 479px) {
+  .input-field {
+    margin-bottom: 19px;
+  }
 }
 
 .modal-icon {
@@ -746,6 +765,12 @@ body .modal-open {
 .textarea-field {
   position: relative;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 479px) {
+  .textarea-field {
+    margin-bottom: 19px;
+  }
 }
 
 .textarea-label {
